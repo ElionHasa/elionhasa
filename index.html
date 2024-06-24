@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>Elion portofolio</title>
+    <title>Elion Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -18,166 +18,60 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav data-toggled="false" data-transitionable="false">
-      <div id="nav-logo-section" class="nav-section">
-        <a>
-          <i class="fa-solid fa-code"></i>
-        </a>
-      </div>
-      <div id="nav-mobile-section">
-        <div id="nav-link-section" class="nav-section">
-          <a href="work.html">WORK</a>
-          <a href="https://www.linkedin.com/in/elion-hasa-5748b2175/">ABOUT</a>
-        </div>
-        <div id="nav-social-section" class="nav-section">
-          <a href="https://twitter.com/elion_hasa">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="https://github.com/ElionHasa" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/elion.dev/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-        <div id="nav-contact-section" class="nav-section">
-          <a href="https://wa.link/h2g4pi">GET IN TOUCH</a>
-        </div>
-      </div>
-      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
-        <span>Menu</span>
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
+    <!-- Your existing HTML content -->
 
-    <main>
-      <article data-index="0" data-status="active">
-        <div class="article-image-section article-section"></div>
-        <div class="article-description-section article-section">
-          <p>
-            Hello there! I'm Elion, a passionate and dedicated web developer
-            with a love for creating dynamic and user-friendly websites. With
-            three years of coding experience under my belt, I specialize in
-            crafting seamless and visually appealing web experiences using:
-            HTML, CSS, and JavaScript.
-          </p>
-        </div>
-        <div class="article-title-section article-section">
-          <h2>My web portofolio</h2>
-          <i class="fa-regular fa-bookmark"></i>
-        </div>
-        <div class="article-nav-section article-section">
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleLeftClick()"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleRightClick()"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </article>
-      <article data-index="1" data-status="inactive">
-        <div class="article-image-section article-section"></div>
-        <div class="article-description-section article-section">
-          <p>
-            Mastering Front End Development HTML, CSS, and JavaScript—I
-            specialize in creating dynamic and user-friendly websites. My
-            expertise extends to utilizing CSS frameworks like Bootstrap and
-            JavaScript libraries such as jQuery to enhance interactivity and
-            design aesthetics. Additionally, I'm proficient in version control
-            systems like Git, ensuring smooth collaboration and project
-            management. Let's leverage these skills to elevate your online
-            presence!
-          </p>
-        </div>
-        <div class="article-title-section article-section">
-          <h2>Abot my journey</h2>
-          <i class="fa-light fa-plus-large"></i>
-        </div>
-        <div class="article-nav-section article-section">
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleLeftClick()"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleRightClick()"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </article>
-      <article data-index="2" data-status="inactive">
-        <div class="article-image-section article-section"></div>
-        <div class="article-description-section article-section">
-          <p>
-            Explore my aspirations and vision for the future of web development.
-            I am committed to innovating, enhancing user experience, and staying
-            at the forefront of industry trends. Ready to work and collaborate,
-            let's create the next generation of digital experiences together.
-          </p>
-        </div>
-        <div class="article-title-section article-section">
-          <h2>My Vision</h2>
-          <i class="fa-light fa-plus-large"></i>
-        </div>
-        <div class="article-nav-section article-section">
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleLeftClick()"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleRightClick()"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </article>
-      <article data-index="3" data-status="inactive">
-        <div class="article-image-section article-section"></div>
-        <div class="article-description-section article-section">
-          <p>+355694842125</p>
-          <p>Tirane</p>
-          <p>elionhasa36@gmail.com</p>
-        </div>
-        <div class="article-title-section article-section">
-          <h2>Kontakt</h2>
-          <i class="fa-light fa-plus-large"></i>
-        </div>
-        <div class="article-nav-section article-section">
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleLeftClick()"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            class="article-nav-button"
-            type="button"
-            onclick="handleRightClick()"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </article>
-    </main>
-    <script src="./script.js"></script>
+    <script>
+      // Carousel Navigation
+      let activeIndex = 0;
+
+      const slides = document.getElementsByTagName("article");
+
+      const handleLeftClick = () => {
+        const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
+
+        const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "after";
+
+        nextSlide.dataset.status = "becoming-active-from-before";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      const handleRightClick = () => {
+        const nextIndex = activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
+
+        const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
+          nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+
+        currentSlide.dataset.status = "before";
+
+        nextSlide.dataset.status = "becoming-active-from-after";
+
+        setTimeout(() => {
+          nextSlide.dataset.status = "active";
+          activeIndex = nextIndex;
+        });
+      };
+
+      // Mobile Nav Toggle
+      const nav = document.querySelector("nav");
+
+      const handleNavToggle = () => {
+        nav.dataset.transitionable = "true";
+
+        nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
+      };
+
+      window.matchMedia("(max-width: 800px)").onchange = (e) => {
+        nav.dataset.transitionable = "false";
+
+        nav.dataset.toggled = "false";
+      };
+    </script>
   </body>
 </html>
