@@ -269,6 +269,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
   main > article {
     grid-template-columns: none;
+    grid-template-rows: auto;
   }
 
   main > article > .article-title-section > h2 {
@@ -287,6 +288,7 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
   main > article > .article-image-section {
     order: 1;
+    height: 50vh;
   }
 
   main > article > .article-title-section {
@@ -297,11 +299,19 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
   main > article > .article-description-section {
     justify-content: center;
     order: 3;
+    padding: 2rem;
   }
 
   main > article > .article-nav-section {
     border-bottom: 1px solid var(--border-color);
     order: 4;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  main > article > .article-nav-section > .article-nav-button {
+    font-size: 2rem;
   }
 }
 
@@ -387,6 +397,16 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 
   main > article > .article-description-section > p {
     font-size: 1rem;
+  }
+
+  main > article > .article-nav-section {
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  main > article > .article-nav-section > .article-nav-button {
+    font-size: 2rem;
   }
 }
 
