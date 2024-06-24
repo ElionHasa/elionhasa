@@ -1,3 +1,8 @@
+function handleNavToggle() {
+  const nav = document.querySelector('nav');
+  const toggled = nav.getAttribute('data-toggled') === 'true';
+  nav.setAttribute('data-toggled', !toggled);
+}
 /* -- Carousel Navigation -- */
 const script = document.createElement("script");
 
