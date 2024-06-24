@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Elion portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/3fdfe3be5b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="e.svg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <nav data-toggled="false" data-transitionable="false">
+      <div id="nav-logo-section" class="nav-section">
+        <a>
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+      <div id="nav-mobile-section">
+        <div id="nav-link-section" class="nav-section">
+          <a href="work.html">WORK</a>
+          <a name="" href="https://www.linkedin.com/in/elion-hasa-5748b2175/"
+            >ABOUT</a
+          >
+        </div>
+        <div id="nav-social-section" class="nav-section">
+          <a href="https://twitter.com/elion_hasa">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://github.com/ElionHasa" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/elion.dev/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div id="nav-contact-section" class="nav-section">
+          <a href="https://wa.link/h2g4pi">GET IN TOUCH</a>
+        </div>
+      </div>
+      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <main>
+      <article data-index="0" data-status="active">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            Hello there! I'm Elion, a passionate and dedicated web developer
+            with a love for creating dynamic and user-friendly websites. With
+            three years of coding experience under my belt, I specialize in
+            crafting seamless and visually appealing web experiences using:
+            HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>My web portofolio</h2>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article data-index="1" data-status="inactive">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            Mastering Front End Development HTML, CSS, and JavaScript—I
+            specialize in creating dynamic and user-friendly websites. My
+            expertise extends to utilizing CSS frameworks like Bootstrap and
+            JavaScript libraries such as jQuery to enhance interactivity and
+            design aesthetics. Additionally, I'm proficient in version control
+            systems like Git, ensuring smooth collaboration and project
+            management. Let's leverage these skills to elevate your online
+            presence!
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>Abot my journey</h2>
+          <i class="fa-light fa-plus-large"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article data-index="2" data-status="inactive">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>
+            Explore my aspirations and vision for the future of web development.
+            I am committed to innovating, enhancing user experience, and staying
+            at the forefront of industry trends. Ready to work and collaborate,
+            let's create the next generation of digital experiences together.
+          </p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>My Vision</h2>
+          <i class="fa-light fa-plus-large"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+      <article data-index="3" data-status="inactive">
+        <div class="article-image-section article-section"></div>
+        <div class="article-description-section article-section">
+          <p>+355694842125</p>
+          <p>Tirane</p>
+          <p>elionhasa36@gmail.com</p>
+        </div>
+        <div class="article-title-section article-section">
+          <h2>Kontakt</h2>
+          <i class="fa-light fa-plus-large"></i>
+        </div>
+        <div class="article-nav-section article-section">
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class="article-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </article>
+    </main>
+    <!-- partial -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
